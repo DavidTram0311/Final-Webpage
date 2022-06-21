@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Shopping Cart Page</title>
+    <!-- box-icon -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="main.css">
+    <!-- font web -->
+</head>
+
+<body>
+    <div id="next">
+        <div class="app-main">
+            <header class="site-header">
+                <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+                    <div class = "container">
+                        <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                            <img src = "logo.png" alt = "site icon" style="width: 50px">
+                            <span class = "ms-2" style="font-weight: 1000">E-Shop</span>
+                        </a>
+            
+                        <div class = "order-lg-2 nav-btns">
+                            <button type = "button" class = "btn position-relative">
+                                <i class='bx bx-search-alt-2' ></i>
+                            </button>
+                            <button type = "button" class = "btn position-relative">
+                                <a href="shopping-cart.html" style="color:black"><i class='bx bx-cart-alt'></i></a>
+                            </button>
+                            <button type = "button" class = "btn position-relative">
+                                <i class='bx bx-user'></i>
+                            </button>
+                        </div>
+            
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class = "collapse navbar-collapse" id = "navMenu">
+                            <ul class = "navbar-nav mx-auto text-center">
+                                <li class = "nav-item px-2 py-2">
+                                    <a class = "nav-link text-dark fw-bold ms-5" href = "#product">Products</a>
+                                </li>
+                                <li class = "nav-item px-2 py-2">
+                                    <a class = "nav-link text-dark fw-bold ms-5" href = "#inspiration">Inspiration</a>
+                                </li>
+                                <li class = "nav-item px-2 py-2 border-0">
+                                    <a class = "nav-link text-dark fw-bold ms-5" href = "#rooms">Rooms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="main-page">
+                <section class="cart py-4">
+                    <div class="container px-3">
+                        <div class="cart-intro d-flex justify-content-between">
+                            <h5 class="cart-title text-dark fw-bold">Shopping Cart</h5>
+                            <div class="checkout-status">
+                                <div class="d-flex align-content-center">
+                                    <div class="active">
+                                        <i class='bx bx-cart-alt'></i>
+                                    </div>
+
+                                    <div class="done">
+                                        <i class='bx bxs-truck'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-list">
+                            <p class="text-dark fw-bold" style="opacity: 0.4">Nothing in the cart</p>
+                        </div>
+
+                        <div class="cart-action d-flex align-items-center">
+                            <a href="index.html" class="btn-back d-flex align-items-center" style="text-decoration: none; font-weight: 800; font-size: 14px; color: black">
+                                <i class='bx bx-left-arrow-alt' style="font-size: 20px" ></i>
+                                Continue Shopping
+                            </a>
+                            <input type="text" placeholder="Promo Code" class="cart-promo">
+                        </div>
+
+                        <div class="cart-check-out d-flex align-items-center">
+                            <p class="total-cost" style="color: gray; margin-right: auto">
+                                Total cost <strong style="color: black; margin-left: 15px">$ 0.00</strong>
+                            </p>
+
+                            <a href="#" class="check-out" style="color: black">
+                                Checkout
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
