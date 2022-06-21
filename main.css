@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-    --lg-font: 'Nanum Myeongjo', serif;
+    --lg-font: 'Tinos', serif;
 }
 
 body{
@@ -9,12 +9,14 @@ body{
 }
 
 /*nav bar */
+
 .navbar-brand img {
     display: block;
     width: 26px;
   }
 .navbar {
-    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    height: 85px;
 
 }
  
@@ -31,38 +33,26 @@ body{
 }
 
 .navbar-nav li a {
-    font-weight: 1000;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 14px;
+
 }
 
 .navbar .btn {
     font-size: 23px;
 }
 
-#special {
-    margin-top: 70px;
 
+main {
+    padding-top: 85px;
 }
-
 
 /* special */
 .special-img span{
     top: 20px;
     right: 20px;
 }
-.special-list .btn{
-    padding: 8px 20px!important;
-}
-.special-img img{
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-.special-img:hover img{
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
-}
-
 /* product content filter */
 
 .title h5 {
@@ -74,18 +64,18 @@ body{
     opacity: 0.2;
 }
 
-#special .product-content {
+.product-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     margin-left: 8px;
 }
 
-.product-content h5 {
+.product-list h5 {
     font-weight: 700;
 }
 
-.product-content h5 span {
+.product-list h5 span {
     opacity: 0.2;
 }
 
@@ -98,7 +88,7 @@ body{
     margin-left: 30px;
 }
 
-#special .product-content .product-filter {
+.product-list .product-filter {
     display: flex;
     width: 100%;
     padding: 0;
@@ -169,12 +159,107 @@ body{
     font-weight: 900;
 }
 
+/* shopping-cart */
+
+.main-page {
+    padding-top: 100px;
+
+}
+
+.cart-intro {
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.cart-intro h5 {
+    font-weight: bold;
+}
+
+.checkout-status .active {
+    padding-right: 105px;
+}
 
 
+.checkout-status .active i{
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    border: 2px solid #fbb03b;
+    border-radius: 100%;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    background-color: #fbb03b;   
+}
+
+.done i{
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    border: 1px solid #fbb03b;
+    border-radius: 100%;
+    justify-content: center;
+    font-size: 16px;
+    color: #fbb03b;
+}
+
+.checkout-status .active::before {
+    width: 6%;
+    height: 1px;
+    right: 166px;
+    top: 142px;
+    content: "";
+    display: block;
+    background: #eee;
+    margin-top: -1px;
+    position: absolute;
+}
+
+.cart-action {
+    margin-top: 75px;
+}
+
+.cart-action .btn-back {
+    margin-right: auto
+}
+
+.cart-action .btn-back i{
+    margin-right: 15px;
+}
+
+.cart-action .cart-promo {
+    border: 1px solid gray;
+    width: auto;
+    height: 49px;
+    padding-left: 10px;
+    opacity: 0.6;
+    font-size: 13px;
+    border-radius: 30px;
+}
+
+.cart-check-out {
+    margin-top: 30px;
+}
+
+.cart-check-out a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fbb03b;
+    border-radius: 50px;
+    font-size: 13px;
+    padding: 8px 25px;
+    background-color: #fbb03b;
+    text-transform: uppercase;
+}
 /* media queries */
 @media(min-width: 992px){
     .nav-item{
         border-bottom: none;
     }
 }
+
 
