@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Shopping Cart Page</title>
+    <!-- box-icon -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="main.css">
+    <!-- font web -->
+</head>
+
+<body>
+    <div id="next">
+        <div class="app-main">
+            <header class="site-header">
+                <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+                    <div class = "container">
+                        <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                            <img src = "logo.png" alt = "site icon" style="width: 50px">
+                            <span class = "ms-2" style="font-weight: 1000">E-Shop</span>
+                        </a>
+            
+                        <div class = "order-lg-2 nav-btns">
+                            <button type = "button" class = "btn position-relative">
+                                <i class='bx bx-search-alt-2' ></i>
+                            </button>
+                            <button type = "button" class = "btn position-relative">
+                                <a href="shopping-cart.html" style="color:black"><i class='bx bx-cart-alt'></i></a>
+                            </button>
+                            <button type = "button" class = "btn position-relative">
+                                <i class='bx bx-user'></i>
+                            </button>
+                        </div>
+            
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class = "collapse navbar-collapse" id = "navMenu">
+                            <ul class = "navbar-nav mx-auto text-center">
+                                <li class = "nav-item px-2 py-2">
+                                    <a class = "nav-link text-dark fw-bold ms-5" href = "index.html">Products</a>
+                                </li>
+                                <li class = "nav-item px-2 py-2">
+                                    <a class = "nav-link text-dark fw-bold ms-5" href = "#inspiration">Inspiration</a>
+                                </li>
+                                <li class = "nav-item px-2 py-2 border-0">
+                                    <a class = "nav-link text-dark fw-bold ms-5" href = "#rooms">Rooms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="main-page">
+                <section class="cart py-4">
+                    <div class="container px-3">
+                        <div class="cart-intro d-flex justify-content-between">
+                            <h4 class="cart-title text-dark fw-bold">Shipping and Payment</h4>
+                            <div class="checkout-status">
+                                <div class="d-flex align-content-center">
+                                    <div class="active">
+                                        <i class='bx bx-cart-alt'></i>
+                                    </div>
+
+                                    <div class="done">
+                                        <i class='bx bxs-truck'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout-content row">
+                            <div class="checkout col-5">
+                                <div class="checkout-btn mb-5">
+                                    <button type="button" class="btn-log">LOG IN</button>
+                                    <button type="button" class="btn-sign">SIGN UP</button>
+                                </div>
+                                <div class="block">
+                                    <h6 class="block-title text-dark fw-bold mb-4">Shipping information</h6>
+                                    <form>
+                                        <div class="form-input d-flex justify-content-between mb-3">
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="Email">
+                                            </div>
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="Address">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-input d-flex justify-content-between mb-3">
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="First name">
+                                            </div>
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="City">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-input d-flex justify-content-between mb-3">
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="Last name">
+                                            </div>
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="Postal code / ZIP">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-input d-flex justify-content-between mb-3">
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="Phone number">
+                                            </div>
+                                            <div class="form-col">
+                                                <input class="input" type="text" placeholder="Country">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="block mb-4">
+                                    <h6 class="text-dark fw-bold mb-4">Payment method</h6>
+                                    <ul class="round-option d-flex flex-wrap">
+                                        <li class="round-item">
+                                            <img src="paypal.png" alt="Paypal">
+                                        </li>
+
+                                        <li class="round-item">
+                                            <img src="visa.png" alt="Paypal">
+                                        </li>
+
+                                        <li class="round-item">
+                                            <img src="mastercard.png" alt="Paypal">
+                                        </li>
+
+                                        <li class="round-item">
+                                            <img src="maestro.png" alt="Paypal">
+                                        </li>
+
+                                        <li class="round-item">
+                                            <img src="discover.png" alt="Paypal">
+                                        </li>
+
+                                        <li class="round-item">
+                                            <img src="ideal.svg" alt="Paypal">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="block">
+                                    <h6 class="text-dark fw-bold mb-4">Delivery method</h6>
+                                    <ul class="round-option-2 d-flex flex-wrap">
+                                        <li class="round-item-2">
+                                            <img src="inpost.svg" alt="Paypal">
+                                            <p class="text-dark fw-bold" style="font-size: 14px; margin-bottom: -0.5px;">$20.00</p>
+                                        </li>
+
+                                        <li class="round-item-2">
+                                            <img src="dpd.svg" alt="Paypal">
+                                            <p class="text-dark fw-bold" style="font-size: 14px; margin-bottom: -0.5px;">$12.00</p>
+                                        </li>
+
+                                        <li class="round-item-2">
+                                            <img src="dhl.svg" alt="Paypal">
+                                            <p class="text-dark fw-bold" style="font-size: 14px; margin-bottom: -0.5px;">$15.00</p>
+                                        </li>
+
+                                        <li class="round-item-2">
+                                            <img src="maestro.png" alt="Paypal">
+                                            <p class="text-dark fw-bold" style="font-size: 14px; margin-bottom: -0.5px;">$10.00</p>
+                                        </li>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="block">
+                                    <h6 class="text-dark fw-bold mb-4">Your cart</h6>
+                                    <div class="checkout-total d-flex align-items-center">
+                                        <p style="opacity: 0.6; margin-top: 12px">Total cost</p>
+                                        <h5 style="font-size: 15px; font-weight: bold; margin-top: 9px">$0</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="aciton-cart d-flex align-items-center mt-5">
+                            <a href="index.html" class="btn-back d-flex align-items-center" style="text-decoration: none; font-weight: 800; font-size: 14px; color: black; margin-right: auto;">
+                                <i class='bx bx-left-arrow-alt' style="font-size: 20px; margin-right: 10px;" ></i>
+                                Back
+                            </a>
+
+                            <div class="action">
+                                <button type="button" class="btn-ctn fw-bold">CONTINUE SHOPPING</button>
+                                <button type="button" class="btn-pay fw-bold">PROCEED TO PAYMENT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
